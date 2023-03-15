@@ -34,7 +34,7 @@ export const getPosts = () => {
 				dispatch(postSuccess(res.data));
 			})
 			.catch((error) => {
-				dispatch(postError(error));
+				dispatch(postError(error.message));
 			})
 			.finally(() => {
 				dispatch(postLoading(false));

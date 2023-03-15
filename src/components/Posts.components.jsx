@@ -11,7 +11,7 @@ export const Posts = () => {
 	}, []);
 
 	if (error !== null) {
-		return <p>Ups! Ocurrió un error. Error: {error.message}. Vuelve a intentarlo</p>;
+		return <p>Ups! Ocurrió un error. Error: {error}. Vuelve a intentarlo</p>;
 	}
 
 	return (
